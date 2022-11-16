@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AdminHome">
+
+
+    <Button
+        android:textAllCaps="false"
+        android:onClick="adddriv"
+        android:layout_margin="8dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Users"
+        android:textSize="13sp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/appcolor"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"/>
+
+    <Button
+        android:onClick="logout"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Log out"
+        android:textSize="13sp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/appcolor"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+</LinearLayout>

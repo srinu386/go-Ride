@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.vehicalpooling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scooter"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/preferences"
+        android:roundIcon="@drawable/scooter"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".Track"></activity>
+        <activity android:name=".History" />
+        <activity android:name=".Mybookings" />
+        <activity android:name=".Maps" />
+        <activity android:name=".Book" />
+        <activity android:name=".Pooling" />
+        <activity android:name=".ShareTrip" />
+        <activity android:name=".ShowMaps" />
+        <activity
+            android:name=".ViewStudent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login" />
+        <activity android:name=".AdminHome" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.NOTIFY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".DeviceBootReceiver"
+            android:enabled="true"
+            tools:ignore="MissingClass,WrongManifestParent">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD4KfDcLVjVPatpIKtrPXot024Z4UHVZQ8" />
+    </application>
+
+</manifest>

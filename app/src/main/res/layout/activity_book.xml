@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Book">
+
+    <EditText
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/nm"/>
+
+    <TextView
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:id="@+id/mb"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="10dp"
+        android:text="Get Location"
+        android:id="@+id/loc"
+        android:drawableEnd="@drawable/ic_baseline_location_on_24"
+        android:background="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1f33b8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-30dp"
+        android:text="Latitude will be here! "/>
+    <TextView
+        android:id="@+id/lonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1f33b8"
+        android:layout_marginLeft="20dp"
+        android:text="Longitude will be here! "/>
+
+    <Button
+        android:onClick="pool"
+        android:textAllCaps="false"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="Pool"
+        android:textSize="11sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/btnadd"
+        android:backgroundTint="@color/appcolor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>
